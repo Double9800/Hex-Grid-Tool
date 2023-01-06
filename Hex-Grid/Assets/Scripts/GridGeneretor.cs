@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GridGeneretor : MonoBehaviour
 {
-    //[HideInInspector]
+    [HideInInspector]
     public int GridX, GridY;
     [SerializeField]
     private GameObject Tile;
@@ -12,16 +12,10 @@ public class GridGeneretor : MonoBehaviour
     private const float OffsetOnX = 0.22f;
     private const float outerRadius = 1f;
 
-
-    private void Awake()
-    {
-        CreateGrid(GridX,GridY);        
-    }
-
     //GenerateHexGrid
     public void CreateGrid(int Xaxis, int Yaxis)
     {
-        GameObject Parent = new GameObject("HexTileParent");
+        GameObject Parent = new GameObject("HexTileContainer");
         Parent.tag = "HexTileParent";
         for (float x = 0; x < Xaxis; x++)
         {
