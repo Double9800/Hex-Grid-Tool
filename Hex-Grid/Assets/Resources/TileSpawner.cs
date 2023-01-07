@@ -8,8 +8,8 @@ public class TileSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tiles;
     private bool CanSpawn;
-    public int x, y;
-    [SerializeField] EnumUtility.TileTheme TileType;
+    [HideInInspector] public int x, y;
+    [HideInInspector] public EnumUtility.TileTheme TileType;
     [SerializeField] private GridGeneretor gridGenerator;
     private GameObject TileContainer;
     [HideInInspector] public int NumberOfSpawn;
@@ -58,8 +58,7 @@ public class TileSpawner : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 1))
         {
             if (hit.collider.CompareTag("Tile"))
-            {
-                Debug.Log(hit.transform.name);
+            {               
                 CanSpawn = false;
             }
             else if (hit.collider.CompareTag("GridTile") && CanSpawn == false)
@@ -69,6 +68,7 @@ public class TileSpawner : MonoBehaviour
             else if (hit.collider.CompareTag("GridTile") && CanSpawn == true)
             {
                 Instantiate(Tiles[(int)TileType], hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
+                Tiles[(int)TileType].GetComponent<Tile>().TileTypology = TileType;
                 hit.collider.gameObject.GetComponent<Collider>().enabled = false;
                 hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = false;
             }

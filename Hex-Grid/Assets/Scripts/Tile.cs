@@ -6,14 +6,12 @@ using Enumerations;
 public class Tile : MonoBehaviour
 {
 
-
-    private EnumUtility.TileTheme TileTypology;
-    private string[] NeighboringCells = { "NE", "E", "SE", "SO", "O", "NO" };
-    private Material[] TileMat;
-
-    private EnumUtility.TileTheme ReturnTileTypology()
+    [HideInInspector]public EnumUtility.TileTheme TileTypology;
+    [HideInInspector]public string[] Cells = new string[6];
+    
+    private string ReturnTileTypology()
     {
-        return TileTypology;
+        return TileTypology.ToString();
     }
 
     private Transform ReturnTransform()
@@ -21,8 +19,14 @@ public class Tile : MonoBehaviour
         return this.gameObject.transform;
     }
 
+    public void SetType(EnumUtility.TileTheme Type)
+    {
+        TileTypology = Type;
+    }
+
     public void CheckTypologyEvent()
     {
+        string[] NeighboringCells = new string[6];
         int[] RotationValues = { 25, 90, 155, 205, 270, 335 };
         string[] neighboringCellsString = { "NE", "E", "SE", "SO", "O", "NO" };
         Vector3 StartPoint = transform.position;
@@ -38,12 +42,15 @@ public class Tile : MonoBehaviour
             {
                 if (_hit.transform.gameObject.GetComponent<Tile>() == true)
                 {
-                    Debug.Log(neighboringCellsString[x] + " " + _hit.transform.gameObject.GetComponent<Tile>().ReturnTileTypology());
+                    NeighboringCells[x] = _hit.transform.gameObject.GetComponent<Tile>().ReturnTileTypology();
+                    Cells[x] = NeighboringCells[x];
                 }
             }
             else
             {
-                Debug.Log("NULL");
+                NeighboringCells[x] = "NULL";
+                Cells[x] = NeighboringCells[x];
+                Debug.Log("Null");
             }
         }
     }
