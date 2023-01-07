@@ -7,6 +7,8 @@ TagManager:
   - HexTileParent
   - Tile
   - GridTile
+  - TileContainer
+  - TileSpawner
   layers:
   - Default
   - TransparentFX

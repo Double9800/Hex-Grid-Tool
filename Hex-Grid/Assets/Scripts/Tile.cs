@@ -1,22 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Enumerations;
 
 public class Tile : MonoBehaviour
 {
-    public enum TileType
-    {
-        Forest,
-        Desert,
-        Water
-        //Others type...
-    }
 
-    private TileType TileTypology;
+
+    private EnumUtility.TileTheme TileTypology;
     private string[] NeighboringCells = { "NE", "E", "SE", "SO", "O", "NO" };
     private Material[] TileMat;
 
-    private TileType ReturnTileTypology()
+    private EnumUtility.TileTheme ReturnTileTypology()
     {
         return TileTypology;
     }

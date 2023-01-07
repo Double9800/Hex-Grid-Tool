@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3763136143292981334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8019140741562254957}
+  - component: {fileID: -2412686189106593918}
+  - component: {fileID: -2626242096842195464}
+  m_Layer: 0
+  m_Name: TileSpawner
+  m_TagString: TileSpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8019140741562254957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3763136143292981334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2412686189106593918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3763136143292981334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3546d9ff14c93b84ba92a408466e8894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tiles:
+  - {fileID: 772435438422667834, guid: 418c0b060b15046409f2b6aa8b2f7749, type: 3}
+  - {fileID: 709431452243506722, guid: cb9d4c0f37eed9a49b85ebb4fe660d17, type: 3}
+  - {fileID: 7348437720249585137, guid: 7e8cb7706ef99f44f9c738186e43b9f1, type: 3}
+  - {fileID: 9153411085973793949, guid: 434f58f2484a1e543a1e2295285250f3, type: 3}
+  x: 25
+  y: 10
+  TileType: 0
+  gridGenerator: {fileID: -2626242096842195464}
+  NumberOfSpawn: 0
+--- !u!114 &-2626242096842195464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3763136143292981334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1c9ce86b57908458cc100485a261df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GridX: 0
+  GridY: 0
+  Tile: {fileID: 7360985770959861415, guid: 1203e6a74db91684e9d35ee42ddb5d3d, type: 3}
