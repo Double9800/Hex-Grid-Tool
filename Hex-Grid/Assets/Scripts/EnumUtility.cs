@@ -11,7 +11,8 @@ namespace Enumerations
             Forest,
             Desert,
             Water,
-            City
+            City,
+            Street
         }
     }
 }

@@ -18,8 +18,8 @@ public class DrawHexTileGizmo : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawIcon(transform.position, "Light Gizmo.tiff");
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawIcon(transform.position, "Light Gizmo.tiff");
+    //}
 }

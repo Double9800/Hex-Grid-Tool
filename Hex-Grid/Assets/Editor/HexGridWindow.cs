@@ -24,7 +24,7 @@ public class HexGridWindow : EditorWindow
         x = EditorGUILayout.IntField("X Size", x);
         y = EditorGUILayout.IntField("Y Size", y);
 
-        if (GUILayout.Button("Instantiate Tile Generetor"))
+        if (GUILayout.Button("Create Grid & Instantiate Tile spawner"))
         {
             SpawnObject();
         }
