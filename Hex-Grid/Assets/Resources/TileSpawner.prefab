@@ -45,13 +45,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tiles:
-  - {fileID: 1576789753977203854, guid: 560e35e5e0c657f4bb170ced3a91e383, type: 3}
+  - {fileID: 760027359836224468, guid: ae30c50e78102fa44a7c5a10d1cabff7, type: 3}
   - {fileID: 8782880375661725218, guid: 27346dd1afb5fe744a838a380821661c, type: 3}
   - {fileID: 7971838422970971438, guid: 5dbd8c5216300734f839a01c619d568e, type: 3}
   - {fileID: 9153411085973793949, guid: 434f58f2484a1e543a1e2295285250f3, type: 3}
-  - {fileID: 6286976867645337575, guid: 5df4e35136a66744f88da34852f2abee, type: 3}
-  x: 7
-  y: 7
+  - {fileID: 6023114605391202584, guid: da3f849f700f4b34fbf73f42bae3df3d, type: 3}
+  - {fileID: 6510376814992279992, guid: c30f363c0174f48418ad16b7c112f672, type: 3}
+  - {fileID: 6023114605391202584, guid: df41626018919d74f9d5ece9fb4fffc1, type: 3}
+  - {fileID: 6023114605391202584, guid: f261fc1348107444f800605c8db16d62, type: 3}
+  - {fileID: 6510376814992279992, guid: c30f363c0174f48418ad16b7c112f672, type: 3}
+  - {fileID: 6023114605391202584, guid: 0e5a6f2f93ede59489c391269c3854f0, type: 3}
+  - {fileID: 6023114605391202584, guid: 2f5ca52cbb5d86648bd0b2a0d8c5de56, type: 3}
+  - {fileID: 6023114605391202584, guid: 2f5ca52cbb5d86648bd0b2a0d8c5de56, type: 3}
+  x: 25
+  y: 15
   TileType: 0
   gridGenerator: {fileID: -2626242096842195464}
   NumberOfSpawn: 0

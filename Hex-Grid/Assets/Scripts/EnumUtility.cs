@@ -9,10 +9,21 @@ namespace Enumerations
         public enum TileTheme
         {
             Forest,
-            Desert,
+            Oasis,
             Water,
             City,
-            Street
+            Snow_1m,
+            Sand_1m,
+            Grass_1m,
+            Stone_1m,
+            Snow_2m,
+            Sand_2m,
+            Grass_2m,
+            Stone_2m,
+            Snow_3m,
+            Sand_3m,
+            Grass_3m,
+            Stone_3m
         }
     }
 }
