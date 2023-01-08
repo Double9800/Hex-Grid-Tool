@@ -58,10 +58,15 @@ public class HexGridWindow : EditorWindow
 
     void SpawnObject()
     {
-        TileSpawner = Resources.Load("TileSpawner", typeof(GameObject)) as GameObject;
-        TileSpawner.GetComponent<TileSpawner>().x = x;
-        TileSpawner.GetComponent<TileSpawner>().y = y;
-        Instantiate(TileSpawner, new Vector3(0, 0, 0), Quaternion.identity);
+        TileSpawner tileSpawner = GameObject.FindObjectOfType<TileSpawner>();
+        if(tileSpawner == null)
+        {
+            TileSpawner = Resources.Load("TileSpawner", typeof(GameObject)) as GameObject;
+            TileSpawner.GetComponent<TileSpawner>().x = x;
+            TileSpawner.GetComponent<TileSpawner>().y = y;
+            Instantiate(TileSpawner, new Vector3(0, 0, 0), Quaternion.identity);
+        }
+
     }
 
     void ChangeTileType()
