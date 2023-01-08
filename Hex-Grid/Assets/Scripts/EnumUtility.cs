@@ -23,7 +23,9 @@ namespace Enumerations
             Snow_3m,
             Sand_3m,
             Grass_3m,
-            Stone_3m
+            Stone_3m,
+            Trees,
+            Castle
         }
     }
 }
