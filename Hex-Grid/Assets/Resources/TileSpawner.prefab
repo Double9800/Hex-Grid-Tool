@@ -49,8 +49,9 @@ MonoBehaviour:
   - {fileID: 709431452243506722, guid: cb9d4c0f37eed9a49b85ebb4fe660d17, type: 3}
   - {fileID: 7348437720249585137, guid: 7e8cb7706ef99f44f9c738186e43b9f1, type: 3}
   - {fileID: 9153411085973793949, guid: 434f58f2484a1e543a1e2295285250f3, type: 3}
-  x: 25
-  y: 10
+  - {fileID: 4147750268005037459, guid: 8fdfa9d9509c00d4e8796fcbae698e6c, type: 3}
+  x: 6
+  y: 6
   TileType: 0
   gridGenerator: {fileID: -2626242096842195464}
   NumberOfSpawn: 0
