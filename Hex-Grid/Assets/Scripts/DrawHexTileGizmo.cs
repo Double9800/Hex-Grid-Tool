@@ -8,9 +8,9 @@ public class DrawHexTileGizmo : MonoBehaviour
     //Set Parent as father's tile and Destroy the HexTile when editor goes play
     private void Awake()
     {
-        if (Application.isEditor)
-        {
-            GameObject Parent = GameObject.FindGameObjectWithTag("HexTileParent");
+        GameObject Parent = GameObject.FindGameObjectWithTag("HexTileParent");
+        if (Application.isEditor && Parent != null)
+        {           
             gameObject.transform.parent = Parent.transform;
         }
         if (Application.isPlaying)
@@ -18,8 +18,4 @@ public class DrawHexTileGizmo : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.DrawIcon(transform.position, "Light Gizmo.tiff");
-    //}
 }

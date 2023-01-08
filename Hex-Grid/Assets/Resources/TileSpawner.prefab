@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tiles:
-  - {fileID: 772435438422667834, guid: 418c0b060b15046409f2b6aa8b2f7749, type: 3}
-  - {fileID: 709431452243506722, guid: cb9d4c0f37eed9a49b85ebb4fe660d17, type: 3}
-  - {fileID: 7348437720249585137, guid: 7e8cb7706ef99f44f9c738186e43b9f1, type: 3}
+  - {fileID: 1576789753977203854, guid: 560e35e5e0c657f4bb170ced3a91e383, type: 3}
+  - {fileID: 8782880375661725218, guid: 27346dd1afb5fe744a838a380821661c, type: 3}
+  - {fileID: 7971838422970971438, guid: 5dbd8c5216300734f839a01c619d568e, type: 3}
   - {fileID: 9153411085973793949, guid: 434f58f2484a1e543a1e2295285250f3, type: 3}
-  - {fileID: 4147750268005037459, guid: 8fdfa9d9509c00d4e8796fcbae698e6c, type: 3}
-  x: 6
-  y: 6
+  - {fileID: 6286976867645337575, guid: 5df4e35136a66744f88da34852f2abee, type: 3}
+  x: 7
+  y: 7
   TileType: 0
   gridGenerator: {fileID: -2626242096842195464}
   NumberOfSpawn: 0

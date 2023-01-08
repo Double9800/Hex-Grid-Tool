@@ -46,7 +46,7 @@ public class GridGeneretor : MonoBehaviour
     //Return Odd position
     private Vector3 OddLineVector(float x, float y)
     {
-        float xPosition = (x + y * 0.5f - y / 2) * (OffsetOnX * 2f);
+        float xPosition = (x + y * 0.5f - y / 2) * (OffsetOnX * 1.97f);
         float yPosition = 0f;
         float zPosition = y * (outerRadius * 1.5f);
 
@@ -56,7 +56,7 @@ public class GridGeneretor : MonoBehaviour
     //Return Even position
     private Vector3 EvenLineVector(float x, float y)
     {
-        float xPosition = (x + y * 0.5f - y / 2) * (OffsetOnX * 2f);
+        float xPosition = (x + y * 0.5f - y / 2) * (OffsetOnX * 1.97f);
         float yPosition = 0f;
         float zPosition = y * (outerRadius * 1.5f) + 0.75f;
 
