@@ -13,7 +13,9 @@ public class TileSpawner : MonoBehaviour
     [SerializeField] private GridGeneretor gridGenerator;
     private GameObject TileContainer;
     [HideInInspector] public int NumberOfSpawn;
+    [HideInInspector] public bool CanWork;
     private int z = 1;
+
     void Start()
     {
         if (NumberOfSpawn == 0 && Application.isEditor)
@@ -28,7 +30,10 @@ public class TileSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpawnTile(ref TileType);     
+        if(CanWork == true)
+        {
+            SpawnTile(ref TileType);
+        }         
         BlockTransform();
     }
 

@@ -9,6 +9,7 @@ public class HexGridWindow : EditorWindow
     GameObject TileSpawner;
     GameObject[] Tile;
     int x, y;
+    bool CanWork = true;
     TileTheme TileType;
     string NE, E, SE, SO, O, NO;
     
@@ -29,13 +30,9 @@ public class HexGridWindow : EditorWindow
             SpawnObject();
         }
 
+        CanWork = EditorGUILayout.Toggle("TileSpawner CanWork", CanWork);
         TileType = (TileTheme)EditorGUILayout.EnumPopup("Tile To Create", TileType);
-
-        if (GUILayout.Button("Change Tile"))
-        {
-            ChangeTileType();
-        }
-       
+     
         EditorGUILayout.TextField("North East Cell",NE);
         EditorGUILayout.TextField("East Cell",E);
         EditorGUILayout.TextField("South East Cell",SE);
@@ -56,6 +53,11 @@ public class HexGridWindow : EditorWindow
         }
     }
 
+    public void OnInspectorUpdate()
+    {
+        TileSpawnerWorkBool();
+    }
+
     // Get Tile spawner object by project folder and set the size of the grid, then instantaite the hex grid with the right sizes
     void SpawnObject()
     {
@@ -70,10 +72,14 @@ public class HexGridWindow : EditorWindow
 
     }
 
-    // Get Tile spawner object in the hierarchy and set new tipe for next Tile
-    void ChangeTileType()
+    // Get Tile spawner object in the hierarchy and set new tipe for next Tile & CanWork bool
+    void TileSpawnerWorkBool()
     {
         TileSpawner = GameObject.FindGameObjectWithTag("TileSpawner");
-        TileSpawner.GetComponent<TileSpawner>().SetTileTheme(TileType);
+        if(TileSpawner != null)
+        {
+            TileSpawner.GetComponent<TileSpawner>().CanWork = CanWork;
+            TileSpawner.GetComponent<TileSpawner>().SetTileTheme(TileType);
+        }
     }
 }
