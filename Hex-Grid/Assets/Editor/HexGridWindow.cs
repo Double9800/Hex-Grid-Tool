@@ -9,7 +9,7 @@ public class HexGridWindow : EditorWindow
     GameObject TileSpawner;
     GameObject[] Tile;
     int x, y;
-    EnumUtility.TileTheme TileType;
+    TileTheme TileType;
     string NE, E, SE, SO, O, NO;
     
 
@@ -29,7 +29,7 @@ public class HexGridWindow : EditorWindow
             SpawnObject();
         }
 
-        TileType = (EnumUtility.TileTheme)EditorGUILayout.EnumPopup("Tile To Create", TileType);
+        TileType = (TileTheme)EditorGUILayout.EnumPopup("Tile To Create", TileType);
 
         if (GUILayout.Button("Change Tile"))
         {
@@ -56,6 +56,7 @@ public class HexGridWindow : EditorWindow
         }
     }
 
+    // Get Tile spawner object by project folder and set the size of the grid, then instantaite the hex grid with the right sizes
     void SpawnObject()
     {
         TileSpawner tileSpawner = GameObject.FindObjectOfType<TileSpawner>();
@@ -69,6 +70,7 @@ public class HexGridWindow : EditorWindow
 
     }
 
+    // Get Tile spawner object in the hierarchy and set new tipe for next Tile
     void ChangeTileType()
     {
         TileSpawner = GameObject.FindGameObjectWithTag("TileSpawner");

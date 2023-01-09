@@ -48,7 +48,7 @@ MonoBehaviour:
   - {fileID: 760027359836224468, guid: ae30c50e78102fa44a7c5a10d1cabff7, type: 3}
   - {fileID: 8782880375661725218, guid: 27346dd1afb5fe744a838a380821661c, type: 3}
   - {fileID: 7971838422970971438, guid: 5dbd8c5216300734f839a01c619d568e, type: 3}
-  - {fileID: 9153411085973793949, guid: 434f58f2484a1e543a1e2295285250f3, type: 3}
+  - {fileID: 6023114605391202584, guid: 71db3f5c19472c34caad3c07fde02254, type: 3}
   - {fileID: 6023114605391202584, guid: da3f849f700f4b34fbf73f42bae3df3d, type: 3}
   - {fileID: 6510376814992279992, guid: c30f363c0174f48418ad16b7c112f672, type: 3}
   - {fileID: 6023114605391202584, guid: df41626018919d74f9d5ece9fb4fffc1, type: 3}
@@ -63,8 +63,8 @@ MonoBehaviour:
   - {fileID: 6023114605391202584, guid: 2b698a203714dd04d87cb756068c7d94, type: 3}
   - {fileID: 6023114605391202584, guid: a7792103217f2ef4e91e43e2bfb3bad4, type: 3}
   - {fileID: 6023114605391202584, guid: 90fac7c308220a14788514eecf13bdc3, type: 3}
-  x: 6
-  y: 6
+  x: 50
+  y: 15
   TileType: 0
   gridGenerator: {fileID: -2626242096842195464}
   NumberOfSpawn: 0

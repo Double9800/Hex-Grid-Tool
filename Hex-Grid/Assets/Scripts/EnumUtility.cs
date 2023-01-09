@@ -3,29 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Enumerations
-{
-    public class EnumUtility
-    {
+{     
         public enum TileTheme
         {
-            Forest,
-            Oasis,
-            Water,
-            City,
-            Snow_1m,
-            Sand_1m,
-            Grass_1m,
-            Stone_1m,
-            Snow_2m,
-            Sand_2m,
-            Grass_2m,
-            Stone_2m,
-            Snow_3m,
-            Sand_3m,
-            Grass_3m,
-            Stone_3m,
-            Trees,
-            Castle
-        }
-    }
+            Forest,      // = 0
+            Oasis,       // = 1
+            Water,       // = 2
+            Farm,        // = 3
+            Snow_1m,     // = 4
+            Sand_1m,     // = 5
+            Grass_1m,    // = 6
+            Stone_1m,    // = 7
+            Snow_2m,     // = 8
+            Sand_2m,     // = 9
+            Grass_2m,    // = 10
+            Stone_2m,    // = 11
+            Snow_3m,     // = 12
+            Sand_3m,     // = 13
+            Grass_3m,    // = 14
+            Stone_3m,    // = 15
+            Trees,       // = 16
+            Castle       // = 17
+
+            //Others type
+        }   
 }

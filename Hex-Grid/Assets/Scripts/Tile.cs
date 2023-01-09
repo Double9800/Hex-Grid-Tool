@@ -6,7 +6,7 @@ using Enumerations;
 public class Tile : MonoBehaviour
 {
 
-    [HideInInspector]public EnumUtility.TileTheme TileTypology;
+    public TileTheme TileTypology;
     [HideInInspector]public string[] Cells = new string[6];
     
     private string ReturnTileTypology()
@@ -19,7 +19,7 @@ public class Tile : MonoBehaviour
         return this.gameObject.transform;
     }
 
-    public void SetType(EnumUtility.TileTheme Type)
+    public void SetType(TileTheme Type)
     {
         TileTypology = Type;
     }
