@@ -9,7 +9,7 @@ public class TileSpawner : MonoBehaviour
     [SerializeField] private GameObject[] Tiles;
     private bool CanSpawn;
     [HideInInspector] public int x, y;
-    public TileTheme TileType;
+    [HideInInspector] public TileTheme TileType;
     [SerializeField] private GridGeneretor gridGenerator;
     private GameObject TileContainer;
     [HideInInspector] public int NumberOfSpawn;
