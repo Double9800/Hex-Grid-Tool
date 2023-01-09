@@ -75,7 +75,8 @@ public class TileSpawner : MonoBehaviour
             else if (hit.collider.CompareTag("GridTile") && CanSpawn == true)
             {
                 Instantiate(Tiles[(int)TileType], hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
-                Tiles[(int)TileType].GetComponent<Tile>().TileTypology = Type;
+                //Tiles[(int)TileType].GetComponent<Tile>().TileTypology = Type;
+                Tiles[(int)TileType].GetComponent<Tile>().SetType(Type);
                 hit.collider.gameObject.GetComponent<Collider>().enabled = false;
                 hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = false;
             }
